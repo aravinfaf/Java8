@@ -1,20 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Ragul {
 
     public static void main(String[] args) {
-        String a = "ragul123@kal12345678leri";
+        Map<String,String> stringMap = new HashMap<>();
 
-        for (int i = 0; i < a.length(); i++) {
-            char c = a.charAt(i);
+        stringMap.put("Aravind","Android");
+        stringMap.put("Ragul","Java");
 
-            if (!Character.isDigit(c) && Character.isLetterOrDigit(c))
-            {
-                System.out.print(c);
-            }
-            //System.out.println(c);
+        for(Map.Entry map : stringMap.entrySet()){
+            System.out.println(map.getKey()+" : "+map.getValue());
         }
-
-        //System.out.println(a);
-
     }
 }
 

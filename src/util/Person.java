@@ -59,4 +59,8 @@ public class Person {
     public static Person getPerson(){
         return new Person("Aravind",175,100000.0,"male",2, Arrays.asList("Cricket","Volley ball"));
     }
+
+    public  String toString(){
+        return name+" "+height+" "+salary+" "+gender+" "+kids;
+    }
 }

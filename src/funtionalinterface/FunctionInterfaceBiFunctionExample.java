@@ -21,7 +21,7 @@ public class FunctionInterfaceBiFunctionExample {
 
         list.forEach(person -> {
             if (predicate.test(person)) {
-            map.put(person.getName(), person.getSalary());
+                map.put(person.getName(), person.getSalary());
             }
         });
         return map;
