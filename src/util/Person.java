@@ -55,4 +55,8 @@ public class Person {
 
         return Arrays.asList(p1,p2,p3,p4,p5);
     }
+
+    public static Person getPerson(){
+        return new Person("Aravind",175,100000.0,"male",2, Arrays.asList("Cricket","Volley ball"));
+    }
 }
